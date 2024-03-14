@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(9, 9, 121) 35%, rgb(6, 84, 170) 60%, rgb(0, 212, 255) 100%);
+}
+
+.main-container {
+  width: 30%;
+  margin: 5rem auto 0;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 2px 3px 2px #ddd;
+  background: #ffffff;
+}
+.main-container .container .content-heading {
+  margin-bottom: 1rem;
+}
+.main-container .container .content-heading h2 {
+  color: rgb(1, 1, 63);
+  font-weight: bold;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgb(1, 1, 63);
+  padding-bottom: 1rem;
+  text-align: left;
+}
+.main-container .container .content-heading h3 {
+  color: rgb(1, 1, 63);
+  font-weight: 500;
+  font-size: 1.2rem;
+  text-align-last: left;
+}
+.main-container .container .question-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.main-container .container .question-container .qusBtn {
+  padding: 0.7rem 0;
+  font-size: 1rem;
+  border: 1.5px solid rgb(1, 1, 63);
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.main-container .container .question-container .qusBtn:hover :not([disabled]) {
+  background-color: #ddd;
+}
+.main-container .container .question-container .qusBtn:disabled {
+  cursor: no-drop;
+}
+.main-container .container .submit-btn {
+  margin-top: 1.5rem;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.main-container .container .submit-btn button {
+  border: none;
+  outline: none;
+  padding: 0.5rem 1.25rem;
+  font-size: 17px;
+  background-color: rgb(1, 1, 63);
+  color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.main-container .container .submit-btn button:hover {
+  background-color: #007bff;
+}
+
+.correct {
+  background: #9aeabc;
+}
+
+.incorrect {
+  background: #ff9393;
+}/*# sourceMappingURL=style.css.map */

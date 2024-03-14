@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(6, 84, 170, 1) 60%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+.main-container {
+  width: 30%;
+  margin: 5rem auto 0;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 2px 3px 2px #ddd;
+  background: #ffffff;
+  .container {
+    .content-heading {
+      margin-bottom: 1rem;
+      h2 {
+        color: rgb(1, 1, 63);
+        font-weight: bold;
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+        border-bottom: 1px solid rgb(1, 1, 63);
+        padding-bottom: 1rem;
+        text-align: left;
+      }
+      h3 {
+        color: rgb(1, 1, 63);
+        font-weight: 500;
+        font-size: 1.2rem;
+        text-align-last: left;
+      }
+    }
+    .question-container {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      .qusBtn {
+        padding: 0.7rem 0;
+        font-size: 1rem;
+        border: 1.5px solid rgb(1, 1, 63);
+        outline: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s;
+      }
+      .qusBtn:hover :not([disabled]) {
+        background-color: #ddd;
+      }
+      .qusBtn:disabled {
+        cursor: no-drop;
+      }
+    }
+    .submit-btn {
+      margin-top: 1.5rem;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+
+      button {
+        border: none;
+        outline: none;
+        padding: 0.5rem 1.25rem;
+        font-size: 17px;
+        background-color: rgb(1, 1, 63);
+        color: #ffffff;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s;
+        
+      }
+      button:hover {
+        background-color: #007bff;
+      }
+    }
+  }
+}
+// js classList
+.correct {
+  background: #9aeabc;
+}
+.incorrect {
+  background: #ff9393;
+}
